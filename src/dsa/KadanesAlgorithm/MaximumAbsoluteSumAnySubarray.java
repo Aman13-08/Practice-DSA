@@ -42,3 +42,20 @@ public class MaximumAbsoluteSumAnySubarray {
         System.out.println(maxAbsoluteSum(nums));
     }
 }
+
+
+//Given array: nums = [1, -3, 2, 3, -4]
+//Step	num	sum (Current Subarray Sum)	min (Min Sum Found So Far)	Action
+//1	      1	  0 + 1 = 1	                   1	                      No reset needed
+//2	       -3	1 + (-3) = -2	            -2	                     No reset needed
+//3	        2	-2 + 2 = 0	                -2	                     Reset sum = 0
+//4	        3	0 + 3 = 3	                -2	                    Reset sum = 0 since sum > 0
+// 5	    -4	0 + (-4) = -4	            -4	                                No reset needed
+//
+//Step	num	sum (Current Subarray Sum)	max (Max Sum Found So Far)	Action
+//1	1	0 + 1 = 1	1	No reset needed
+//2	-3	1 + (-3) = -2	1	Reset sum = 0 (sum < 0)
+//        3	2	0 + 2 = 2	2	No reset needed
+//4	3	2 + 3 = 5	5	No reset needed
+//5	-4	5 + (-4) = 1	5	No reset needed
+//Final maxSS(nums) = 5
