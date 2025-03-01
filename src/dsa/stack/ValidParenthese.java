@@ -2,6 +2,7 @@ package dsa.stack;
 import java.util.*;
 //Comapany Tags -> Amazon ✯   LinkedIn ✯   Facebook ✯   Microsoft ✯   Bloomberg ✯   Spotify   Apple   Adobe   Expedia   Google   Oracle   VMware   Cisco   Intel   Yandex   tiktok   Arista Networks   Barclays   ServiceNow   Uber   Goldman Sachs   Booking.com   Salesforce   Netflix   Dataminr   tcs
 //LeetCode Link -> https://leetcode.com/problems/valid-parentheses/
+
 public class ValidParenthese {
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
