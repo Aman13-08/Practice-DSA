@@ -1,5 +1,9 @@
 package dsa.stack;
 import  java.util.*;
+//Company tags =  Amazon ✯   Bridgewater Associates ✯
+//Questions -> Given an array of n integers nums, a 132 pattern is a subsequence of three integers nums[i], nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].
+//Return true if there is a 132 pattern in nums, otherwise, return false.
+
 public class Pattern_132 {
     public static boolean find132pattern(int[] nums) {
 
@@ -19,7 +23,7 @@ public class Pattern_132 {
         return false;
     }
     public static void main(String[] args) {
-        int[] nums =  {3,1,4,2};
+        int[] nums =  {3,1,4,2};// nums[i] < nums[k] < nums[j].
         System.out.println(find132pattern(nums));
     }
 }
