@@ -1,7 +1,7 @@
 package dsa.arrays;
 
 import java.util.Arrays;
-
+//Company tags = Amazon ✯
 public class PartitionArrayAccordingToGivenPivot_2161 {
 
     public static int[] pivotArray(int[] nums, int pivot) {
